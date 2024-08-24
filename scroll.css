@@ -1,0 +1,152 @@
+/* Basic reset and body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Container for centering content */
+.container {
+    width: 95%;
+    max-width: 1600px; /* Increase the max-width to fit more content on larger screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #aab924;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #4b79a1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.event-details {
+    text-align: left;
+}
+
+.event-details h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #ff7e5f;
+}
+
+.event-details h3, .event-details h4, .event-details h5, .event-details h2 {
+    margin: 5px 0;
+}
+
+/* Departments row styles */
+.departments-row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure no wrapping */
+    gap: 10px; /* Reduce gap to fit more content */
+    justify-content: space-between;
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+/* Department section styles */
+.department {
+    background-color: rgb(211, 188, 119);
+    flex: 1 1 200px; /* Allow sections to shrink if needed */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.department h2 {
+    font-size: 18px; /* Adjusted font size */
+    color: #283e51;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.department h3.red {
+    color: #ff7e5f;
+    margin-bottom: 15px;
+}
+
+.event-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-list li {
+    margin-bottom: 10px;
+}
+
+.event-list h5 {
+    margin: 0;
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 5px;
+    font-size: 12px; /* Adjusted font size */
+    color: rgb(9, 9, 9);
+    background-color: #a6c1da;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #283e51;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .departments-row {
+        flex-direction: row;
+        overflow-x: auto; /* Keep the horizontal scrolling on smaller screens */
+    }
+
+    .department {
+        flex: 1 1 150px; /* Allow sections to shrink more on smaller screens */
+        max-width: 200px;
+    }
+}
+.black{
+    color: #333;
+}
+.home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}

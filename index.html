@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Details</title>
+    <link rel="stylesheet" href="pay.css">
+    <script src="pay.js" defer></script>
+</head>
+<body>
+    <div class="home">
+        <a href="scrollbutton.html" class="home-button">Home</a>
+    </div>
+    <div class="form-container">
+        <form id="registration-form" method="post" onsubmit="return validateForm()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required><br>
+
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Middle Name"><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required><br>
+
+            <label for="collegename">Enter Your College Name:</label>
+            <input type="text" id="collegename" name="collegename" placeholder="College Name" required><br>
+
+            <label for="mobileno">Enter Your Mobile Number:</label>
+            <input type="text" id="mobileno" name="mobileno" placeholder="10-digit number" required><br>
+
+            <label for="gender">Select Your Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select your department</option>
+                <option value="computer_science_and_engineering">Computer Science and Engineering</option>
+                <option value="electrical_engineering">Electrical Engineering</option>
+                <option value="electronics_and_telecommunication">Electronics and Telecommunication</option>
+                <option value="mechanical_engineering">Mechanical Engineering</option>
+                <option value="civil_engineering">Civil Engineering</option>
+                <option value="textile_engineering">Textile Engineering</option>
+                <option value="chemical_engineering">Chemical Engineering</option>
+            </select><br>
+
+            <label for="event">Event:</label>
+            <input type="text" id="event" name="event" value="Codnova" readonly><br>
+
+            <!-- Hidden field for UPI ID -->
+            <input type="hidden" id="upi-id" name="upi-id" value="sumitkoli982292@ybl"><br>
+
+            <!-- Button to initiate payment -->
+            <button type="button" id="pay-button" onclick="redirectToPayment()">Pay</button><br>
+
+            <!-- Button to submit the form, initially hidden -->
+            <button type="submit" id="submit-button" style="display:none;">Submit Registration</button>
+
+            <!-- Placeholder for error messages -->
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+        </form>
+    </div>
+</body>
+</html>
